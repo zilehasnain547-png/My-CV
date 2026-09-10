@@ -1,0 +1,96 @@
+/* Reset & Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+/* Header & Profile Picture Layout */
+.header-container {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.profile-pic {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%; /* Makes image circular */
+    object-fit: cover; /* Prevents distortion */
+    border: 3px solid #0056b3;
+}
+
+.header-text h1 {
+    font-size: 2rem;
+    color: #222;
+}
+
+.header-text .title {
+    font-size: 1.1rem;
+    color: #0056b3;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.header-text .contact {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.header-text a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+/* Content Sections */
+section {
+    margin-top: 25px;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 5px;
+    margin-bottom: 12px;
+    font-size: 1.3rem;
+}
+
+.job h3 {
+    font-size: 1.05rem;
+    color: #333;
+}
+
+.date {
+    font-size: 0.85rem;
+    color: #777;
+    display: block;
+    margin-bottom: 8px;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+/* Mobile Responsive Design */
+@media (max-width: 600px) {
+    .header-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
